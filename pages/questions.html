@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Bank - Bankers Association</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="nav-logo">🏦</span>
+                <h2>Bankers Association</h2>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="exams.html">Exams</a>
+                <a href="questions.html" style="color: var(--primary-blue);">Questions</a>
+                <a href="transfers.html">Transfers</a>
+                <a href="forum.html">Forum</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <section class="features" style="padding-top: var(--spacing-xl);">
+        <div class="container">
+            <h1>Question Bank</h1>
+            <p style="font-size: var(--font-size-lg); color: var(--gray-600); margin-bottom: var(--spacing-xl);">
+                Practice with our comprehensive collection of banking exam questions
+            </p>
+
+            <!-- Stats -->
+            <div class="stats-grid" style="margin-bottom: var(--spacing-xl);">
+                <div class="stat-card">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Total Questions</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">45</span>
+                    <span class="stat-label">Questions Practiced</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">78%</span>
+                    <span class="stat-label">Accuracy Rate</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">Bookmarked</span>
+                </div>
+            </div>
+
+            <!-- Question Categories -->
+            <h2>Browse by Category</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏦</div>
+                    <h3>Banking Awareness</h3>
+                    <p>150 questions covering banking terms, RBI policies, and financial regulations</p>
+                    <a href="#" class="btn btn-primary btn-sm mt-md">Start Practice</a>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>Reasoning Ability</h3>
+                    <p>120 questions on logical reasoning, puzzles, and analytical thinking</p>
+                    <a href="#" class="btn btn-primary btn-sm mt-md">Start Practice</a>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔢</div>
+                    <h3>Quantitative Aptitude</h3>
+                    <p>130 questions covering mathematics, data interpretation, and calculations</p>
+                    <a href="#" class="btn btn-primary btn-sm mt-md">Start Practice</a>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>General Knowledge</h3>
+                    <p>100 questions on current affairs, economy, and general awareness</p>
+                    <a href="#" class="btn btn-primary btn-sm mt-md">Start Practice</a>
+                </div>
+            </div>
+
+            <!-- Sample Question -->
+            <div style="margin-top: var(--spacing-2xl);">
+                <h2>Sample Question</h2>
+                <div class="feature-card" style="max-width: 800px; margin: var(--spacing-lg) auto;">
+                    <div
+                        style="background: var(--gray-100); padding: var(--spacing-md); border-radius: var(--radius-lg); margin-bottom: var(--spacing-md);">
+                        <strong>Question 1:</strong> What is the current repo rate set by the Reserve Bank of India?
+                    </div>
+                    <div style="display: grid; gap: var(--spacing-sm); margin-bottom: var(--spacing-md);">
+                        <label
+                            style="padding: var(--spacing-sm); border: 2px solid var(--gray-300); border-radius: var(--radius-md); cursor: pointer; transition: all 0.2s;">
+                            <input type="radio" name="answer" value="A"> A) 6.5%
+                        </label>
+                        <label
+                            style="padding: var(--spacing-sm); border: 2px solid var(--gray-300); border-radius: var(--radius-md); cursor: pointer; transition: all 0.2s;">
+                            <input type="radio" name="answer" value="B"> B) 6.75%
+                        </label>
+                        <label
+                            style="padding: var(--spacing-sm); border: 2px solid var(--gray-300); border-radius: var(--radius-md); cursor: pointer; transition: all 0.2s;">
+                            <input type="radio" name="answer" value="C"> C) 7.0%
+                        </label>
+                        <label
+                            style="padding: var(--spacing-sm); border: 2px solid var(--gray-300); border-radius: var(--radius-md); cursor: pointer; transition: all 0.2s;">
+                            <input type="radio" name="answer" value="D"> D) 7.25%
+                        </label>
+                    </div>
+                    <div style="display: flex; gap: var(--spacing-sm);">
+                        <button class="btn btn-primary">Submit Answer</button>
+                        <button class="btn btn-outline">Bookmark</button>
+                        <button class="btn btn-outline">Next Question</button>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: var(--spacing-2xl); text-align: center;">
+                <a href="dashboard.html" class="btn btn-outline">← Back to Dashboard</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

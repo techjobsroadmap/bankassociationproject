@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Bankers Association</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            padding: var(--spacing-sm) var(--spacing-md);
+            border: 2px solid var(--gray-300);
+            border-radius: var(--radius-lg);
+            font-size: var(--font-size-base);
+            font-family: var(--font-family);
+            transition: all var(--transition-fast);
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+        }
+
+        .form-textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="nav-logo">🏦</span>
+                <h2>Bankers Association</h2>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" style="color: var(--primary-blue);">Contact</a>
+                <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="padding: var(--spacing-2xl) 0;">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p style="max-width: 700px; margin: 0 auto;">
+                Have questions? We're here to help!
+            </p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="features">
+        <div class="container">
+            <div
+                style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-2xl); max-width: 1000px; margin: 0 auto;">
+                <!-- Contact Form -->
+                <div>
+                    <h2>Send us a Message</h2>
+                    <form id="contactForm" style="display: grid; gap: var(--spacing-md);">
+                        <div>
+                            <label style="display: block; margin-bottom: var(--spacing-xs); font-weight: 600;">Name
+                                *</label>
+                            <input type="text" class="form-input" placeholder="Your full name" required>
+                        </div>
+                        <div>
+                            <label style="display: block; margin-bottom: var(--spacing-xs); font-weight: 600;">Email
+                                *</label>
+                            <input type="email" class="form-input" placeholder="your.email@example.com" required>
+                        </div>
+                        <div>
+                            <label style="display: block; margin-bottom: var(--spacing-xs); font-weight: 600;">Subject
+                                *</label>
+                            <input type="text" class="form-input" placeholder="How can we help?" required>
+                        </div>
+                        <div>
+                            <label style="display: block; margin-bottom: var(--spacing-xs); font-weight: 600;">Message
+                                *</label>
+                            <textarea class="form-textarea" placeholder="Tell us more about your inquiry..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <h2>Get in Touch</h2>
+                    <div style="display: grid; gap: var(--spacing-lg);">
+                        <div class="feature-card">
+                            <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">📧</div>
+                            <h4>Email</h4>
+                            <p style="margin: 0; color: var(--primary-blue);">support@bankersassociation.com</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">📱</div>
+                            <h4>Phone</h4>
+                            <p style="margin: 0; color: var(--primary-blue);">+91 1800-XXX-XXXX</p>
+                            <p style="margin: 0; font-size: var(--font-size-sm); color: var(--gray-600);">Mon-Fri,
+                                9AM-6PM IST</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">💬</div>
+                            <h4>Community Forum</h4>
+                            <p style="margin: 0;">Join our <a href="forum.html"
+                                    style="color: var(--primary-blue);">community forum</a> for peer support</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">❓</div>
+                            <h4>FAQs</h4>
+                            <p style="margin: 0;">Check our <a href="faq.html" style="color: var(--primary-blue);">FAQ
+                                    page</a> for quick answers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: var(--spacing-2xl);">
+                <a href="../index.html" class="btn btn-outline">← Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/main.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>

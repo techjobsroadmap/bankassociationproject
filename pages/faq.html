@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Bankers Association</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .faq-item {
+            background: white;
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            margin-bottom: var(--spacing-md);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+
+        .faq-item:hover {
+            box-shadow: var(--shadow-lg);
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: var(--gray-900);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            color: var(--gray-600);
+            margin-top: var(--spacing-sm);
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-icon {
+            transition: transform var(--transition-fast);
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="nav-logo">🏦</span>
+                <h2>Bankers Association</h2>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="padding: var(--spacing-2xl) 0;">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <p style="max-width: 700px; margin: 0 auto;">
+                Find answers to common questions about our platform
+            </p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="features">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <!-- General Questions -->
+                <h2>General Questions</h2>
+                <div class="faq-item" onclick="this.classList.toggle('active')">
+                    <div class="faq-question">
+                        What is Bankers Association?
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Bankers Association is a comprehensive platform for banking professionals that provides exam
+                        preparation resources, transfer support, community forums, and current affairs updates.
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="this.classList.toggle('active')">
+                    <div class="faq-question">
+                        Who can join this platform?
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Currently, our platform is designed for SBI employees. We verify users through their official
+                        email addresses and employee IDs to ensure a trusted community.
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="this.classList.toggle('active')">
+                    <div class="faq-question">
+                        Is the platform free to use?
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! Core features including question banks, transfer marketplace, and community forums are
+                        completely free. We believe in supporting the banking community.
+                    </div>
+                </div>
+
+                <!-- Exam Preparation -->
+                <h2 style="margin-top: var(--spacing-2xl);">Exam Preparation</h2>
+                <div class="faq-item" onclick="this.classList.toggle('active')">
+                    <div class="faq-question">
+                        How many questions are available?
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        We currently have 500+ practice questions covering banking awareness, reasoning, quantitative
+                        aptitude, and general knowledge. We regularly add new questions.
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="this.classList.toggle('active')">
+                    <div class="faq-question">
+                        Are the questions verified?
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, all questions are reviewed and verified by experienced banking professionals and subject
+                        matter experts before being added to our database.
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="this.classList.toggle('active')">
+                    <div class="faq-question">
+                        Can I track my progress?
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely! Your dashboard shows detailed analytics including questions practiced, accuracy
+                        rate, weak areas, and performance trends over time.
+                    </div>
+                </div>
+
+                <!-- Transfer Support -->
+                <h2 style="margin-top: var(--spacing-2xl);">Transfer Support</h2>
+                <div class="faq-item" onclick="this.classList.toggle('active')">
+                    <div class="faq-question">
+                        How does the transfer marketplace work?
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        You can post your transfer requirements (location you want to move from/to) and browse listings
+                        from others. When you find a match, you can contact them directly through the platform.
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="this.classList.toggle('active')">
+                    <div class="faq-question">
+                        Is my contact information visible to everyone?
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        No, your contact information is only shared when you choose to connect with someone. You have
+                        full control over your privacy settings.
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="this.classList.toggle('active')">
+                    <div class="faq-question">
+                        Do you help with the transfer process?
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        We provide a platform to connect with potential transfer partners and access transfer policies.
+                        The actual transfer process is handled through official bank channels.
+                    </div>
+                </div>
+
+                <!-- Community -->
+                <h2 style="margin-top: var(--spacing-2xl);">Community & Forums</h2>
+                <div class="faq-item" onclick="this.classList.toggle('active')">
+                    <div class="faq-question">
+                        Can I post anonymously in forums?
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Currently, all forum posts show your name to maintain accountability and trust. However, you can
+                        control what personal information is visible in your profile.
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="this.classList.toggle('active')">
+                    <div class="faq-question">
+                        How are forums moderated?
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        We have community guidelines and a team of moderators who review reported content. Inappropriate
+                        posts, spam, or harassment will result in content removal and potential account suspension.
+                    </div>
+                </div>
+
+                <!-- Technical -->
+                <h2 style="margin-top: var(--spacing-2xl);">Technical Questions</h2>
+                <div class="faq-item" onclick="this.classList.toggle('active')">
+                    <div class="faq-question">
+                        Is there a mobile app?
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        We're currently working on mobile apps for iOS and Android. In the meantime, our website is
+                        fully mobile-responsive and works great on all devices.
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="this.classList.toggle('active')">
+                    <div class="faq-question">
+                        I forgot my password. What should I do?
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Click on "Forgot Password" on the login page. We'll send you a password reset link to your
+                        registered email address.
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="this.classList.toggle('active')">
+                    <div class="faq-question">
+                        How do I delete my account?
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        You can delete your account from your profile settings. Please note that this action is
+                        permanent and cannot be undone.
+                    </div>
+                </div>
+
+                <div
+                    style="text-align: center; margin-top: var(--spacing-2xl); padding: var(--spacing-xl); background: var(--gray-100); border-radius: var(--radius-xl);">
+                    <h3>Still have questions?</h3>
+                    <p style="color: var(--gray-600); margin-bottom: var(--spacing-md);">We're here to help!</p>
+                    <a href="contact.html" class="btn btn-primary">Contact Support</a>
+                </div>
+
+                <div style="text-align: center; margin-top: var(--spacing-lg);">
+                    <a href="../index.html" class="btn btn-outline">← Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
